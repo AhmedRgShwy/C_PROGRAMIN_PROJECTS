@@ -67,13 +67,6 @@ typedef struct{
 U8 DualIllegalSigns[ILLEGALS_NUM][2]= { {'*','/'}, {'/','*'}, {'/','/'}, {'*','*'}, {'+','/'}, {'+','*'}, {'-','*'}, {'-','/'},
 					{'.','.'}, {'.','*'}, {'.','/'}, {'.','+'}, {'.','-'} } ;
 
-typedef struct{
-	U32 leftOprnd;
-	U8 rightOprnd;
-	U8 operator;
-	U32 result;
-	}Process;
-
 U16 getStrCalc( U8 *str );
 U8 departStrCalc( CalcControl *control ) ;
 U8 calcStrVerify( U8 *str ) ;
@@ -125,6 +118,7 @@ U8 calcManagement(double *Answer)
 		/* converts the equation string operands to numbers */
 		check= alphaToNum( &cControl );
 		if( check )
+			/* calculate the input and get the final result */
 			check= calculate( &cControl, Answer );
 		else
 			printf("Error! no input.\n");
