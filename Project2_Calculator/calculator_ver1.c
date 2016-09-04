@@ -13,6 +13,7 @@
 		2- add, subtract, devide and multiblicate.
 		4- No parenthesis x()x.
 		5- Discards white space.
+		6- Designed to grow.
 		
 */
 
