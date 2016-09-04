@@ -67,11 +67,36 @@ typedef struct{
 U8 DualIllegalSigns[ILLEGALS_NUM][2]= { {'*','/'}, {'/','*'}, {'/','/'}, {'*','*'}, {'+','/'}, {'+','*'}, {'-','*'}, {'-','/'},
 					{'.','.'}, {'.','*'}, {'.','/'}, {'.','+'}, {'.','-'} } ;
 
+/*
+** this function is to get the string equation from user 
+** it discards white space
+*/
 U16 getStrCalc( U8 *str );
+/*
+** this function separates the operands from operators by order
+** it stores the operands in two dimentional array
+** it stores operators in another one dimentional array
+*/
 U8 departStrCalc( CalcControl *control ) ;
+/*
+** this functions verify the string input from illegal characters
+** it also search for illegal and malformed signs
+*/
 U8 calcStrVerify( U8 *str ) ;
+/*
+** this function convert the operands as string to numbers 
+** it converts the operand to two parts integer part and after decimal part
+*/
 U8 alphaToNum( const CalcControl *control ); 
+/*
+** this function calculates the whole input equation
+** first it goes from left to right and searchs for the division processes and does it, 
+** then it does the all multiplications, eventually it searches by order the addition and subtraction processes and does
+*/
 U8 calculate( CalcControl *control,  double *Answer );
+/*
+** this functions manages the whole calculator processes from other functions.
+*/
 U8 calcManagement(double *Answer);
 
 
