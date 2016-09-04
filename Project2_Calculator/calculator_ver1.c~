@@ -40,7 +40,7 @@
 #define MAX_OPERS_NUM		MAX_OPERANDS_NUM
 #define ILLEGALS_NUM		13
 // dual legals signs are: {{+,+}, {-,-}, {/,-}, {*,+}, {*,-}, {/,+}, {*,.}, {/,.}, {+,.}, {-,.} }.
-#define LEGALS_NUM		10
+//#define LEGALS_NUM		10
 
 typedef unsigned char  U8;
 typedef signed char  S8;
