@@ -31,7 +31,6 @@
 #define NOT_DIGIT_2d(str,i,j)		(str[i][j]<48 && str[i][j]>57)
 #define OPER_CONDITION_1d(str,i)	(str[i]=='+'||str[i]=='-'||str[i]=='/'||str[i]=='*')
 #define NOT_OPER_CONDITION_1d(str,i)	(str[i]!='+'||str[i]!='-'||str[i]!='/'||str[i]!='*')
-#define NOT_EXIST_SIGN_1d(str,i)	(IS_DIGIT_1d(str,i)&&str[i+1]=='(')
 #define DISCARD_CONDITION(str,i)	(str[i]==' ')
 #define MAX_STRcalc_SIZE		((MAX_OPERAND_SIZE+SPARE_SIZE)*MAX_OPERANDS_NUM)
 
