@@ -14,6 +14,7 @@
 		3- No parenthesis x()x.
 		4- Discards white space.
 		5- Designed to grow.
+		6- Result and each operand cant exceed 999999
 		
 */
 
@@ -35,7 +36,7 @@
 #define DISCARD_CONDITION(str,i)	(str[i]==' ')
 #define MAX_STRcalc_SIZE		((MAX_OPERAND_SIZE+SPARE_SIZE)*MAX_OPERANDS_NUM)
 
-#define MAX_OPERAND_SIZE	20
+#define MAX_OPERAND_SIZE	12
 #define MAX_OPERANDS_NUM	50
 #define SPARE_SIZE		2
 #define MAX_OPERS_NUM		MAX_OPERANDS_NUM
