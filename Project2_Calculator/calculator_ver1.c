@@ -26,7 +26,7 @@
 #define DEBUGGING		0
 
 #define IS_LEGAL_CHAR_1d(str,i)		(OPER_CONDITION_1d(str,i)||IS_DIGIT_1d(str,i)||str[i]=='.')
-#define ILLEGAL_CHAR_1d(str,i)		(NOT_OPER_CONDITION_1d(str,i)||NOT_DIGIT_1d(str,i))
+#define ILLEGAL_CHAR_1d(str,i)		(NOT_OPER_CONDITION_1d(str,i)||NOT_DIGIT_1d(str,i)||str[i]!='.')
 #define IS_DIGIT_1d(str,i)		(str[i]>= 48&&str[i]<=57)
 #define IS_DIGIT_2d(str,i,j)		(str[i][j]>=48&&str[i][j]<=57)
 #define NOT_DIGIT_1d(str,i)		(str[i]<48&&str[i]>57)
