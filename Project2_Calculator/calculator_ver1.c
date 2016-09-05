@@ -14,7 +14,7 @@
 		3- No parenthesis x()x.
 		4- Discards white space.
 		5- Designed to grow.
-		6- Result and each operand cant exceed 999999
+		6- Result cant exceed 999999
 		
 */
 
