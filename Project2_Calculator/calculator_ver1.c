@@ -38,7 +38,7 @@
 
 #define MAX_OPERAND_SIZE	12
 #define MAX_OPERANDS_NUM	50
-#define SPARE_SIZE		2
+#define SPARE_SIZE		3
 #define MAX_OPERS_NUM		MAX_OPERANDS_NUM
 #define ILLEGALS_NUM		13
 // dual legals signs are: {{+,+}, {-,-}, {/,-}, {*,+}, {*,-}, {/,+}, {*,.}, {/,.}, {+,.}, {-,.} }.
