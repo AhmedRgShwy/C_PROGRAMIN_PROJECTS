@@ -337,6 +337,7 @@ U8 calcStrVerify( U8 *str )
 							#endif
 							break;
 						}
+					/*	when use parenthesis active this check with its makro.
 						else if( NOT_EXIST_SIGN_1d(str,i) )
 						{
 							check= 0;
@@ -345,7 +346,7 @@ U8 calcStrVerify( U8 *str )
 							" and parenthesis.>>\n");
 							#endif
 							break;
-						}
+						}*/
 					}
 					if( !check )
 						break;
