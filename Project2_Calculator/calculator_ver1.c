@@ -89,7 +89,7 @@ U8 calcStrVerify( U8 *str ) ;
 ** this function convert the operands as string to numbers 
 ** it converts the operand to two parts integer part and after decimal part
 */
-U8 alphaToNum( const CalcControl *control ); 
+U8 asciiToNum( const CalcControl *control ); 
 /*
 ** this function calculates the whole input equation
 ** first it goes from left to right and searchs for the division processes and does it, 
@@ -143,7 +143,7 @@ U8 calcManagement(double *Answer)
 	if( check )
 	{
 		/* converts the equation string operands to numbers */
-		check= alphaToNum( &cControl );
+		check= asciiToNum( &cControl );
 		if( check )
 			/* calculate the input and get the final result */
 			check= calculate( &cControl, Answer );
@@ -266,7 +266,7 @@ U8 calculate(  CalcControl *control,  double *Answer )
 
 
 // tested with test cases & it is ready for use.
-U8 alphaToNum( const CalcControl *control )
+U8 asciiToNum( const CalcControl *control )
 {
 	volatile U8 check= 1;
 	U8 *ptr ;
